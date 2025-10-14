@@ -1,0 +1,158 @@
+body {
+   width: 90%;
+   display: flex;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px 250px 250px 250px 250px;
+    grid-template-rows: 320px 320px 320px 320px;
+    gap: 10px;
+    
+}
+.item1 {
+  position: relative;
+}
+
+.item2 {
+    position: relative;
+}
+
+.item3 {
+    position: relative;
+}
+
+.item4 {
+    position: relative;
+}
+
+.item5 {
+    position: relative;
+}
+
+.item6 {
+    position: relative;
+}
+
+.item7 {
+    position: relative;
+}
+
+.item8 {
+    position: relative;
+}
+
+.text-box {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0px;
+  text-align: center;
+  background-color: rgb(218, 185, 185);
+  transition: all 0.5s;
+  height: 20px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.description {
+  visibility: hidden;
+  background-color: antiquewhite;
+}
+.item1:hover .text-box {
+  height: 30%;
+}
+.item1:hover .description {
+  visibility: visible;
+
+}
+.item2:hover .text-box {
+  height: 100px;
+}
+.item2:hover .description {
+  visibility: visible;
+}
+.item3:hover .text-box {
+  height: 100px;
+}
+.item3:hover .description {
+  visibility: visible;
+}
+.item4:hover .text-box {
+  height: 100px;
+}
+.item4:hover .description {
+  visibility: visible;
+}
+.item5:hover .text-box {
+  height: 100px;
+}
+.item5:hover .description {
+  visibility: visible;
+}
+.item6:hover .text-box {
+  height: 100px;
+}
+.item6:hover .description {
+  visibility: visible;
+}
+.item7:hover .text-box {
+  height: 100px;
+}
+.item7:hover .description {
+  visibility: visible;
+}
+.item8:hover .text-box {
+  height: 100px;
+}
+.item8:hover .description {
+  visibility: visible;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+.item2 {
+    border-radius: 4px;
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+.item3 {
+    border-radius: 4px;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    
+}
+.item4 {
+    border-radius: 4px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.item5 {
+    border-radius: 4px;
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+.item6 {
+    border-radius: 4px;
+    grid-column-start: 7;
+}
+.item7 {
+    border-radius: 4px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
+}
+.item8 {
+    border-radius: 4px;
+    grid-column-start: 5;
+    grid-column-end: 8;
+}
