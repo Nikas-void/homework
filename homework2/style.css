@@ -1,0 +1,264 @@
+body {
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Mono", monospace;
+}
+/* Welcome to our site */
+.main-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text1 {
+  font-size: 70px;
+  background: -webkit-linear-gradient(#2adabc, #c50505);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-name: lina;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes lina {
+  0% {
+    opacity: 0;
+    transform: translate(-50px, -50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.text2 {
+  color: white;
+  font-size: 20px;
+  animation-name: luna;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes luna {
+  0% {
+    opacity: 0;
+    transform: translate(50px, 50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.head-button {
+  font-size: 20px;
+  padding: 10px 40px;
+  margin-top: 40px;
+  border-radius: 10px;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  box-shadow: 3px 4px black;
+  transition: 0.4s ease;
+  cursor: pointer;
+  animation-name: nyx;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+}
+
+@keyframes nyx {
+  0% {
+    opacity: 0;
+    transform: translate(500px);
+  }
+}
+
+.head-button:hover {
+  box-shadow: none;
+  transform: translateX(3px) translateY(4px);
+}
+
+/* Containers */
+
+.main-box {
+  width: 90%;
+}
+
+.main-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 60px 0;
+  transition: 0.3s ease;
+  animation-name: tide;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+
+@keyframes tide {
+  0% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#wrapper {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.megabonk1 {
+  animation-name: kunkka1;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  
+}
+
+@keyframes kunkka1 {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.megabonk2 {
+  animation-name: kunkka2;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  
+}
+
+@keyframes kunkka2 {
+  0% {
+    animation-delay: 0.2s;
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.megabonk3 {
+  animation-name: kunkka3;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  
+}
+
+@keyframes kunkka3 {
+  0% {
+    transform: translateY(120px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wrapper-icon {
+  font-size: 70px;
+  text-align: center;
+  animation-name: dancing-icon;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dancing-icon {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.wrapper h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.wrapper p {
+  font-size: 15px;
+}
+
+.wrapper-button {
+  width: 50%;
+  background-color: rgb(203, 180, 240);
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 3px 4px;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.wrapper-button:hover {
+  box-shadow: none;
+  transform: translateX(3px) translateY(4px);
+}
+
+@media (max-width: 770px) {
+  .main-wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.footer-button {
+    padding: 10px;
+    background-color: white;
+    border: turquoise;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 3px black;
+    font-size: 20px;
+    color: turquoise;
+    text-shadow: 2px 2px 2px rgb(0, 26, 255);
+    transition: 1s ease;
+}
+
+.footer-button:hover {
+    box-shadow: none;
+    transform: translate(2px, 3px);
+}
