@@ -10,37 +10,10 @@ body {
     gap: 10px;
     
 }
-.item1 {
+.item {
   position: relative;
 }
 
-.item2 {
-    position: relative;
-}
-
-.item3 {
-    position: relative;
-}
-
-.item4 {
-    position: relative;
-}
-
-.item5 {
-    position: relative;
-}
-
-.item6 {
-    position: relative;
-}
-
-.item7 {
-    position: relative;
-}
-
-.item8 {
-    position: relative;
-}
 
 .text-box {
   position: absolute;

@@ -128,7 +128,8 @@ body {
   animation-name: kunkka1;
   animation-duration: 3s;
   animation-timing-function: ease;
-  
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 @keyframes kunkka1 {
@@ -146,12 +147,13 @@ body {
   animation-name: kunkka2;
   animation-duration: 3s;
   animation-timing-function: ease;
-  
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
 }
 
 @keyframes kunkka2 {
   0% {
-    animation-delay: 0.2s;
     transform: translateY(80px);
     opacity: 0;
   }
@@ -165,7 +167,9 @@ body {
   animation-name: kunkka3;
   animation-duration: 3s;
   animation-timing-function: ease;
-  
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
 }
 
 @keyframes kunkka3 {
@@ -238,27 +242,27 @@ body {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
 }
 
 .footer-button {
-    padding: 10px;
-    background-color: white;
-    border: turquoise;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 2px 3px black;
-    font-size: 20px;
-    color: turquoise;
-    text-shadow: 2px 2px 2px rgb(0, 26, 255);
-    transition: 1s ease;
+  padding: 10px;
+  background-color: white;
+  border: turquoise;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 3px black;
+  font-size: 20px;
+  color: turquoise;
+  text-shadow: 2px 2px 2px rgb(0, 26, 255);
+  transition: 1s ease;
 }
 
 .footer-button:hover {
-    box-shadow: none;
-    transform: translate(2px, 3px);
+  box-shadow: none;
+  transform: translate(2px, 3px);
 }
