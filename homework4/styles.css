@@ -1,0 +1,384 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+/* Header */
+
+.box1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 50;
+  background-color: white;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  box-shadow: 1px 1px 5px;
+}
+.navigations {
+  gap: 20px;
+  display: flex;
+}
+.navigations-head-text {
+  margin-left: -30px;
+  font-size: 26px;
+  animation: slideDown;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  font-family: "Playwrite US Modern", cursive;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  animation: bounce 1s ease;
+}
+
+@keyframes bounce {
+  20%,
+  40%,
+  80%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  60% {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+}
+
+.navigations-text1 {
+  animation-delay: 0.1s;
+}
+.navigations-text2 {
+  animation-delay: 0.2s;
+}
+.navigations-text3 {
+  animation-delay: 0.3s;
+}
+.navigations-text4 {
+  animation-delay: 0.4s;
+}
+
+/* Main (Home) */
+
+.home-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(201, 189, 180, 0.7),
+      rgba(101, 67, 33, 0.7)
+    ),
+    url(wallpaper2.jpg);
+}
+
+/* .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.3;
+} */
+
+.images-donkey {
+  background-image: url(donkeykong.jpeg);
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  background-position: center;
+  background-size: 220px;
+  animation: donkey-move 1s ease;
+  animation-delay: 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  background-attachment: fixed;
+}
+
+@keyframes donkey-move {
+  from {
+    scale: 0;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-text1 {
+  font-size: 100px;
+  animation: donkey1 1s ease;
+  animation-delay: 0.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes donkey1 {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container-text2 {
+  animation: donkey2 1s ease;
+  animation-delay: 0.8s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  font-size: 40px;
+}
+
+@keyframes donkey2 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.container-text3 {
+  font-size: 20px;
+  animation: donkey3 1s ease;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes donkey3 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* About page */
+
+#about {
+  display: flex;
+  text-align: center;
+  background-color: aliceblue;
+  padding: 100px 0;
+  animation: void 10s infinite;
+}
+
+@keyframes void {
+  0% {
+    background-color: aliceblue;
+  }
+  25% {
+    background-color: blueviolet;
+  }
+  50% {
+    background-color: rgb(7, 68, 236);
+  }
+  75% {
+    background-color: rgb(133, 38, 133);
+  }
+  100% {
+    background-color: aliceblue;
+  }
+}
+
+.about-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 45px;
+}
+
+.about-main-container h1 {
+  font-size: 50px;
+  text-shadow: 3px 3px rgb(143, 143, 167);
+}
+.about-main-container p {
+  text-align: start;
+  font-size: 20px;
+}
+
+.about-container {
+}
+
+.about-container h2 {
+  font-size: 30px;
+  text-align: start;
+  padding: 20px 0;
+}
+
+.about-container-boxes {
+  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+}
+
+.monkey-safe {
+  background-color: aquamarine;
+  border-radius: 50px;
+  width: 90px;
+  padding: 15px;
+  font-family: "Playwrite US Modern", cursive;
+  box-shadow: 2px 3px;
+  transition: all 0.5s ease;
+}
+
+.monkey-safe:hover {
+  cursor: not-allowed;
+  background-color: rgb(17, 202, 141);
+  box-shadow: none;
+  translate: 3px 2px;
+}
+
+/* Project Section */
+
+#projects {
+  /* height: 100vh; */
+  text-align: center;
+  padding: 50px 0;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  
+}
+.project-main {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+}
+
+.project-main h1 {
+  font-size: 40px;
+  padding: 50px;
+}
+
+.project-main h2 {
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.project-container {
+  /* background-color: red; */
+  height: 90;
+  width: 90%;
+  border-radius: 25px;
+  text-align: start;
+  box-shadow: 2px 2px 10px;
+  gap: 50px;
+}
+
+.project-container-text {
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+}
+
+.project-container-text p {
+  font-size: 20px;
+}
+
+.project-container-gradient {
+  width: 100%;
+  height: 20vh;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  position: relative;
+}
+
+.project-container-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: nyx 1s infinite;
+}
+
+@keyframes nyx {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.project-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.project-buttons a {
+  font-size: 20px;
+  text-decoration: none;
+}

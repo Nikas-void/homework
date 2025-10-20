@@ -1,6 +1,9 @@
 * {
   padding: 0;
   margin: 0;
+}   
+html {
+  scroll-behavior: smooth;
 }
 /* Header */
 .box1 {
@@ -177,7 +180,6 @@ main {
   border-bottom: 1px solid rgba(208, 205, 207, 0.5);
   border-radius: 6px;
   transition: 0.2s ease;
-  
 }
 
 .menu-item:hover {
@@ -335,7 +337,6 @@ main {
   flex-direction: column;
   gap: 15px;
   text-align: center;
-  
 }
 
 .location-mini-box h1 {
@@ -388,7 +389,9 @@ footer:hover {
   .navigations {
     display: none;
   }
-  .menu-icon-hamburger {display: block;}
+  .menu-icon-hamburger {
+    display: block;
+  }
 }
 @media (max-width: 601px) {
   #home h1 {
@@ -415,5 +418,7 @@ footer:hover {
     display: none;
   }
 
-  .menu-icon-hamburger {display: block;}
+  .menu-icon-hamburger {
+    display: block;
+  }
 }
