@@ -1,0 +1,36 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+.header-main {
+  background-color: rgb(209, 165, 165);
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+.header-main1 {
+    padding-left: 20px;
+    font-size: 50px;
+}
+
+.header-main2 {
+    padding-right: 20px;
+    flex-direction: row;
+    display: flex;
+    gap: 25px;
+    
+}
+
+.header-main2 a {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+.header-main2 div {
+    color: blue;
+}

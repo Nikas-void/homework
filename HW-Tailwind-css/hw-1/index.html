@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie list</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-zinc-900">
+    <div
+      class="flex justify-center item-center p-10 bg-[Purple] mb-10 text-[35px] text-white"
+    >
+      Popular Movies
+    </div>
+    <div class="flex justify-center mb-6">
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Search movies..."
+        class="p-2 rounded-md w-80 text-black bg-white"
+      />
+    </div>
+
+    <div
+      id="container"
+      class="container grid grid-cols-2 gap-6 sm:max-w-[700px] lg:max-w-[1200px] mx-auto sm:grid-cols-3 lg:grid-cols-4"
+    ></div>
+    <script src="script.js"></script>
+  </body>
+</html>
